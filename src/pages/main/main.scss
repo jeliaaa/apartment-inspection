@@ -1,0 +1,69 @@
+@import '../../variables';
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .hero {
+        width: 100%;
+        height: 700px;
+        background-image: url('https://picsum.photos/1800/700');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+
+        .hero_content {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+
+            p {
+                color: white;
+                width: 40%;
+                font-size: large;
+                font-weight: 800;
+            }
+
+            .hero_button {
+                width: 200px;
+                border-radius: 40px;
+                padding: 20px 50px;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-family: "Agbalumo";
+                background-color: #70e000;
+            }
+        }
+    }
+    h1{
+        margin-top: 90px;
+        font-size: xx-large;
+        text-align: center;
+        font-family: 'Agbalumo', sans-serif;
+    }
+    .apartments{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 800px;
+        .chakra-card{
+            width: 30% !important;
+            height: fit-content;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .chakra-card:hover{
+            width: 30% !important;
+            height: fit-content;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            transform: translateY(-20px);
+            transition: transform 1s ease-in-out;
+        }
+    }
+}
