@@ -5,7 +5,18 @@
     row-gap: 40px;
     flex-wrap: wrap;
     width: 100%;
-
+    .search_aparts{
+        width: 100%;
+    }
+    .aparts_hero{
+        margin-bottom: 30px !important;
+        width: 100vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        margin: -30px;
+    }
     a {
         .chakra-card {
             width: 100% !important;

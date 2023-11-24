@@ -6,11 +6,20 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
+  height: 20dvh;
   .logo_wrapper{
     gap: 20px;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
+    .mainLogo{
+      width: 20%;
+      aspect-ratio: 1/0.5;
+      background-position: center;
+      background-size: cover;
+    }
     span{
       color: $primary_color;
       font-weight: bolder;
@@ -18,10 +27,8 @@ header{
       font-family: 'Agbalumo', sans-serif;
     }
   }
-  height: 15dvh;
 }
 .render_space{
-  margin-top: 50px;
   min-height: 75dvh;
 }
 footer{
