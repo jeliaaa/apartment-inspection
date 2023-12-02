@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import './apartmentssingle.scss'
 import almare from '../../assets/apartsImages/almare1.jpg'
+import map from '../../assets/banners/map-pic.jpg'
 
 const ApartmentSingle = () => {
     const { name, id } = useParams();
@@ -24,18 +25,26 @@ const ApartmentSingle = () => {
     })
     return (
         <div className='apartment_single'>
-            <div className="left_side">
-                <div className="img_wrap">
-                    <img src={imgSrc} alt='...' />
-                </div>
-                <div className="banner">
-                    <h4>{name} apartment N{id}</h4>
+            <button className='back-but'>Back</button>
+            <div className="upper-pg">
+                <div className="upper-content">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, obcaecati.</span>
+                    <div className="inner-info">
+                        <img src={almare} alt="" />
+                        <div className="txt">
+                            <p>Lorem, ipsum dolor.</p>
+                            <p>Lorem, ipsum dolor</p>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                        
+                    </div>
+
+                    <p className='description'>Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
             </div>
-            <div className="right_side">
-                <div className="rating">
-                    4.7 / 5
-                </div>
+            
+            <div className="lower-pg">
                 <div className="info_table">
                     <TableContainer>
                         <Table variant='striped'>
@@ -75,8 +84,9 @@ const ApartmentSingle = () => {
                     </TableContainer>
                 </div>
                 <div className="price">
-                    <p>50$</p>
-                    <button>I want to purchase</button>
+                    <img src={map} alt="" className='map'/>
+                    <button>documentation/History</button>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est exercitationem earum sit accusantium? Consequatur, dignissimos?</p>
                 </div>
             </div>
         </div>

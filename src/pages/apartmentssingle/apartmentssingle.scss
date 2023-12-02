@@ -1,6 +1,7 @@
 @import '../../variables';
 .apartment_single{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     .left_side{
@@ -18,40 +19,117 @@
             background-color: $primary_color;
         }
     }
-    .right_side{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        .rating{
-            align-self: flex-start;
-            background-color: rgb(14, 4, 88);
-            width: fit-content;
-            color: white;
-            padding: 10px;
-            border-radius: 15px;
-            font-weight: 500;
-            font-size: large;
+
+.back-but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75px;
+    padding: 10px 55px;
+    border-radius: 60px;
+    background-color: #80ed99;
+    width: 60px;
+
+}
+
+.upper-pg{
+    background-image: url('https://alliance.ge/static/media/kH2mgqOnyfwcl8g8R7O02MrHhwRdfgeSXAmSUpIN.png');
+    margin-top: 30px;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+}
+
+.upper-content{
+    width: 70%;
+    margin-left: 50px;
+    margin-top: 200px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color: #FFF;
+        h2{
+            background-color: yellow;
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 5px;
+            width: 700px;
+            margin-bottom: 3px;
         }
-        .info_table{
-            width: 70%;
+
+        span{
+            background: #e1dbdb;
+            padding-left: 5px;
+            border-radius: 3px;
         }
-        .price{
-            width: 100%;
+
+
+        .inner-info{
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
-            background-color: gold;
-            padding: 40px;
-            border-radius: 15px;
-            color:white;
-            font-weight: bolder;
-            font-size: 30px;
+            flex-direction: row;
+            margin-top: 10px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid gray;
+            img{
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+            }
+
+            .txt{
+                margin-left: 30px;
+                gap: 3px;
+            }
+        }
+
+        .description{
+            margin-top: 15px;
+            background: #e1dbdb;
+            padding-left: 5px;
+            border-radius: 3px;
+            width: 90%;
+        }
+}
+
+    .lower-pg{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        .info_table{
+            width: 70%;
+            padding-top: 70px;
+        }
+        .price{
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            .map{
+                width: 290px;
+                height: 220px;
+            }
+
             button{
-                background-color: rgb(0, 0, 73);
+                padding: 10px 30px;
+                background-color: navy;
+                color: #FFF;
+                font-size: 18px;
+                border-radius: 10px;
+            }
+
+            p{
+                text-align: center;
+                background-color: rgb(252, 86, 113);
+                width: 70%;
                 padding: 10px;
-                border-radius: 15px;
+                color: #FFF;
             }
         }
     }
