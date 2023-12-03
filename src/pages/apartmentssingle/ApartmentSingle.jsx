@@ -4,6 +4,8 @@ import { useParams } from 'react-router-dom'
 import './apartmentssingle.scss'
 import almare from '../../assets/apartsImages/almare1.jpg'
 import map from '../../assets/banners/map-pic.jpg'
+import apartBanner from '../../assets/apartsImages/apartment.jpg'
+import BackBtn from '../../ReusableComps/backbtn/BackBtn';
 
 const ApartmentSingle = () => {
     const { name, id } = useParams();
@@ -25,8 +27,10 @@ const ApartmentSingle = () => {
     })
     return (
         <div className='apartment_single'>
-            <button className='back-but'>Back</button>
-            <div className="upper-pg">
+            <div className='back_btn_wrap'>
+                <BackBtn />
+            </div>
+            <div className="upper-pg" style={{backgroundImage:`url(${apartBanner})`}}>
                 <div className="upper-content">
                     <h2>Lorem ipsum dolor sit amet.</h2>
                     <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, obcaecati.</span>
@@ -39,14 +43,58 @@ const ApartmentSingle = () => {
                         </div>
                         
                     </div>
-
                     <p className='description'>Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
             </div>
             
             <div className="lower-pg">
                 <div className="info_table">
-                    <TableContainer>
+                    <div className='info_element'>
+                        <div className="img_wrapp">
+                            <i className='fa-solid fa-elevator' />
+                        </div>
+                        <div className='description'>
+                            <h4>ლიფტი</h4>
+                            <p>უმაღლესი ხარისხის ლიფტი - ETO</p>
+                        </div>
+                    </div>
+                    <div className='info_element'>
+                        <div className="img_wrapp">
+                            <i className='fa-solid fa-elevator' />
+                        </div>
+                        <div className='description'>
+                            <h4>ლიფტი</h4>
+                            <p>უმაღლესი ხარისხის ლიფტი - ETO</p>
+                        </div>
+                    </div>
+                    <div className='info_element'>
+                        <div className="img_wrapp">
+                            <i className='fa-solid fa-elevator' />
+                        </div>
+                        <div className='description'>
+                            <h4>ლიფტი</h4>
+                            <p>უმაღლესი ხარისხის ლიფტი - ETO</p>
+                        </div>
+                    </div>
+                    <div className='info_element'>
+                        <div className="img_wrapp">
+                            <i className='fa-solid fa-elevator' />
+                        </div>
+                        <div className='description'>
+                            <h4>ლიფტი</h4>
+                            <p>უმაღლესი ხარისხის ლიფტი - ETO</p>
+                        </div>
+                    </div>
+                    <div className='info_element'>
+                        <div className="img_wrapp">
+                            <i className='fa-solid fa-elevator' />
+                        </div>
+                        <div className='description'>
+                            <h4>ლიფტი</h4>
+                            <p>უმაღლესი ხარისხის ლიფტი - ETO</p>
+                        </div>
+                    </div>
+                    {/* <TableContainer>
                         <Table variant='striped'>
                             <Thead>
                                 <Tr>
@@ -81,7 +129,7 @@ const ApartmentSingle = () => {
                                 </Tr>
                             </Tbody>
                         </Table>
-                    </TableContainer>
+                    </TableContainer> */}
                 </div>
                 <div className="price">
                     <img src={map} alt="" className='map'/>
