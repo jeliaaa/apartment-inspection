@@ -6,7 +6,29 @@ import apartmentImg from '../../assets/apartsImages/apartment.jpg'
 import apartmentsHero from '../../assets/apartsImages/apartmentsHero.jpg'
 import numIcon from '../../assets/icons/numberIcon.png'
 const Apartment = () => {
-    let data = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
+    let data = [
+        {id :'1', address: "Chavch1a", sadarbazo: "ravi"},
+        {id :'2', address: "Chavch2a", sadarbazo: "ravi"},
+        {id :'3', address: "Chavch3a", sadarbazo: "ravi"},
+        {id :'4', address: "Chavch4a", sadarbazo: "ravi"},
+        {id :'5', address: "Chavch5a", sadarbazo: "ravi"},
+        {id :'6', address: "Chavch6a", sadarbazo: "ravi"},
+        {id :'7', address: "Chavch7a", sadarbazo: "ravi"},
+        {id :'8', address: "Chavch8a", sadarbazo: "ravi"},
+        {id :'9', address: "Chavch9a", sadarbazo: "ravi"},
+        {id :'10', address: "Chavch10a", sadarbazo: "ravi"},
+        {id :'11', address: "Chavch11a", sadarbazo: "ravi"},
+        {id :'12', address: "Chavch12a", sadarbazo: "ravi"},
+        {id :'13', address: "Chavch13a", sadarbazo: "ravi"},
+        {id :'14', address: "Chavch14a", sadarbazo: "ravi"},
+        {id :'15', address: "Chavch15a", sadarbazo: "ravi"},
+        {id :'16', address: "Chavch16a", sadarbazo: "ravi"},
+        {id :'17', address: "Chavch17a", sadarbazo: "ravi"},
+        {id :'18', address: "Chavch18a", sadarbazo: "ravi"},
+        {id :'19', address: "Chavch19a", sadarbazo: "ravi"},
+        {id :'20', address: "Chavch20a", sadarbazo: "ravi"},
+]
+
     const { name } = useParams()
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredData, setFilteredData] = useState(data);
@@ -25,7 +47,7 @@ const Apartment = () => {
 
     const filterData = (searchTerm) => {
         const filteredData = data.filter((item) =>
-            item === searchTerm
+            item.id === searchTerm
         )
 
         if (searchTerm === '') {
@@ -50,19 +72,24 @@ const Apartment = () => {
                 </Stack>
             </div>
             {filteredData.map((e) => (
-                <Link key={e} to={`${e}`}>
+                <Link key={e.id} to={`${e.id}`}>
                     <Card maxW='sm' >
-                        <CardBody>
+                        <CardBody className='card-white'>
                             <Image
                                 src={apartmentImg}
                                 alt='Green double couch with wooden legs'
                             />
+
                         </CardBody>
                         <Divider />
                         <CardFooter sx={{ backgroundColor: 'black', color: 'white' }}>
                             <Stack>
                                 <div>
-                                    <h4>Apartment N{e}</h4>
+                                    <h4>Apartment N{e.id}</h4>
+                                    <div className="hovered">
+                                        <p className='address'>address: {e.address}</p>
+                                        <p className='sadarbazo'>sadarbazo: {e.sadarbazo}</p>
+                                    </div>
                                 </div>
                             </Stack>
                         </CardFooter>
