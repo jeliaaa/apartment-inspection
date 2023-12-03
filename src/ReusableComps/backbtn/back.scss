@@ -1,0 +1,12 @@
+@import '../../variables';
+.back{
+    border: none;
+    background-color: $primary_color;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+.back_btn_wrap{
+    width: 100%;
+    padding: 20px 50px;
+}
