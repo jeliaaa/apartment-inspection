@@ -38,16 +38,18 @@ footer{
   display: flex;
   flex-direction: column;
   color: white;
-  height: 360px;
+  min-height: 15dvh;
+  width: 100%;
   // height: 10dvh;
 
   .upper-footer{
     height: 90%;
+    width: 100%;
+    padding: 0 50px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 250px;
     .usefull-links{
       display: flex;
       flex-direction: column;
@@ -97,4 +99,28 @@ footer{
     
   }
   
+}
+@media screen and (max-width:750px) {
+  .upper-footer{
+    flex-direction: column !important;
+    padding: 50px;
+    gap: 50px;
+    .usefull-links{
+      width: 70%;
+      text-align: center;
+    }
+    .contact{
+      width: 70%;
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width:600px) {
+  .bottom-footer{
+    flex-direction: column !important;
+    padding: 20px !important;
+    p{
+      text-align: center;
+    }
+  }
 }
