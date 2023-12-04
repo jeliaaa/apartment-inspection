@@ -42,7 +42,8 @@
                 font-weight: 700;
                 font-family: "Poppins", sans-serif;
                 background-color: black;
-                &:hover{
+
+                &:hover {
                     background-color: white;
                     color: black;
                     transition: all 0.5s ease-in-out;
@@ -50,37 +51,68 @@
             }
         }
     }
-    h1{
+
+    h1 {
         margin-top: 30px;
         font-size: xx-large;
         text-align: center;
         font-family: 'Agbalumo', sans-serif;
     }
-    .apartments{
+
+    .apartments {
         margin-top: 40px;
+        padding-bottom: 30px;
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
         width: 100%;
-        height: 800px;
-        .chakra-card{
-            width: 30% !important;
+
+        .cardOfMain {
+            width: 30%;
             height: fit-content;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            .card_button{
+
+            .card_button {
                 color: white;
                 background-color: black;
-                &:hover{
+
+                &:hover {
                     background-color: white;
                     color: black;
                 }
             }
         }
-        .chakra-card:hover{
-            width: 30% !important;
+
+        .chakra-card:hover {
             height: fit-content;
             box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
             transform: translateY(-20px);
             transition: transform 1s ease-in-out;
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .apartments {
+        row-gap: 25px !important;
+        .cardOfMain {
+            width: 45% !important;
+        }
+    }
+}
+@media screen and (max-width: 678px) {
+    .hero_content{
+        flex-direction: column !important;
+        gap: 20px;
+        p{
+            width: 100% !important
+        }
+    }
+}
+@media screen and (max-width:550px) {
+    .apartments {
+        .cardOfMain {
+            width: 85% !important;
         }
     }
 }

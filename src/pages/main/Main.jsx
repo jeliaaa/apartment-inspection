@@ -37,7 +37,7 @@ const Main = () => {
                 <hr />
                 <div className="apartments">
                     {apartments.map((apartment) => (
-                        <Card maxW='sm' key={apartment.id}>
+                        <Card className='cardOfMain' maxW='sm' key={apartment.id}>
                             <CardBody>
                                 <div
                                     src={apartment.imgSrc}
