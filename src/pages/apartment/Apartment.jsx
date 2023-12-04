@@ -5,6 +5,7 @@ import './apartment.scss'
 import apartmentImg from '../../assets/apartsImages/apartment.jpg'
 import apartmentsHero from '../../assets/apartsImages/apartmentsHero.jpg'
 import numIcon from '../../assets/icons/numberIcon.png'
+import BackBtn from '../../ReusableComps/backbtn/BackBtn'
 const Apartment = () => {
     let data = [
         {id :'1', address: "Chavch1a", sadarbazo: "ravi"},
@@ -59,6 +60,7 @@ const Apartment = () => {
 
     return (
         <div className='apartment'>
+            <BackBtn />
             <div className="aparts_hero" style={{ backgroundImage: `url(${apartmentsHero})` }}>
             </div>
             <div className='search_aparts'>
