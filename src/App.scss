@@ -103,7 +103,7 @@ footer{
 @media screen and (max-width:750px) {
   .upper-footer{
     flex-direction: column !important;
-    padding: 50px;
+    padding: 50px !important; 
     gap: 50px;
     .usefull-links{
       width: 70%;
@@ -123,4 +123,13 @@ footer{
       text-align: center;
     }
   }
+
+  .logo-link{
+    display: none;
+
+    span{
+      display: none !important;
+    }
+  }
+
 }

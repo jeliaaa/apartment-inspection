@@ -21,7 +21,7 @@ function App() {
       <header>
         <div className="logo_wrapper">
           <div className='mainLogo' style={{ backgroundImage: `url(${mainLogo})` }} />
-          <Link to={'/'}><span>Apartment Inspection</span></Link>
+          <Link className='logo-link' to={'/'}><span>Apartment Inspection</span></Link>
         </div>
         <Menu>
           <MenuButton as={Button} >
