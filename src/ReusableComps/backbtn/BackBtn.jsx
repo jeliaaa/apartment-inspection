@@ -12,6 +12,7 @@ const BackBtn = () => {
   pathArr.splice(0,1)
 
   const newPath = `/${pathArr.join('/')}`;
+  
 
   return (
     <div className='back_btn_wrap'>
