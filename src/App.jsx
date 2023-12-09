@@ -19,10 +19,10 @@ function App() {
   return (
     <div className="App">
       <header>
-        <div className="logo_wrapper">
+        <Link to={'/'} className='logo_wrapper'>
           <div className='mainLogo' style={{ backgroundImage: `url(${mainLogo})` }} />
           <Link className='logo-link' to={'/'}><span>Apartment Inspection</span></Link>
-        </div>
+        </Link>
         <Menu>
           <MenuButton as={Button} >
             {t('lang')}

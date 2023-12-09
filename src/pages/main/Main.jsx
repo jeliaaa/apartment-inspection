@@ -33,7 +33,7 @@ const Main = () => {
                 </div>
             </div>
             <Element name='apartments'>
-                <h1>Apartments</h1>
+                <h1>{t('apartments')}</h1>
                 <hr />
                 <div className="apartments">
                     {apartments.map((apartment) => (
@@ -60,7 +60,7 @@ const Main = () => {
                                 <ButtonGroup spacing='2'>
                                     <Link to={`/${apartment.name}`}>
                                         <Button variant='solid' className='card_button'>
-                                            See Apartments
+                                            {t('view')}
                                         </Button>
                                     </Link>
                                 </ButtonGroup>
