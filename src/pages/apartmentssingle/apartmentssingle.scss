@@ -143,7 +143,7 @@
                 height: 220px;
             }
 
-            button{
+            .download{
                 padding: 10px 30px;
                 background-color: navy;
                 color: #FFF;
@@ -161,7 +161,16 @@
         }
     }
 }
-
+.gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    .image-gallery{
+        width: 50%;
+    }
+}
 @media screen and (max-width:900px) {
     .upper-pg{
         justify-content: center !important;
@@ -177,10 +186,19 @@
             width: 80% !important;
         }
     }
-    
+    .gallery{
+        .image-gallery{
+            width: 70% ;
+        }
+    }
 }
 @media screen and (max-width:550px) {
     .info_table{
         width: 90% !important;
+    }
+    .gallery{
+        .image-gallery{
+            width: 90% ;
+        }
     }
 }

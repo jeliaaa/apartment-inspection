@@ -100,6 +100,18 @@ footer{
   }
   
 }
+@media screen and (max-width:900px) {
+  header{
+    .logo_wrapper{
+      span{
+        display: none;
+      }
+      .mainLogo{
+        width: 40% ;
+      }
+    }
+  }
+}
 @media screen and (max-width:750px) {
   .upper-footer{
     flex-direction: column !important;
@@ -124,12 +136,12 @@ footer{
     }
   }
 
-  .logo-link{
-    display: none;
 
-    span{
-      display: none !important;
+}
+@media screen and (max-width:400px) {
+  .logo_wrapper{
+    .mainLogo{
+      width: 90% !important;
     }
   }
-
 }
