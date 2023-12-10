@@ -211,7 +211,7 @@ const ApartmentCustom = () => {
                             </Stack>
                             <Stack spacing={3}>
                                 <FormLabel>{t('renovationQuality')}</FormLabel>
-                                <Select placeholder={t('renovationQuality')} id='renovation' size='lg' onChange={(e) => changeOfSelect(e)} >
+                                <Select placeholder={t('renovationQuality')} id='renovationQuality' size='lg' onChange={(e) => changeOfSelect(e)} >
                                     <option value={1}>1</option>
                                     <option value={2}>2</option>
                                     <option value={3}>3</option>
