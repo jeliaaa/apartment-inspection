@@ -28,7 +28,11 @@ const resources = {
         viewPhotos: 'View Photos',
         back: 'Back',
         area: 'Area',
-        sqm: 'Sq/M'
+        sqm: 'Sq/M',
+        apartId : 'Apartment ID',
+        name: 'Name',
+        phone: 'Phone',
+        mail: 'Email'
     },
   },
   ge: {
@@ -56,7 +60,11 @@ const resources = {
         viewPhotos: 'იხ. ფოტოები',
         back: 'უკან',
         area: 'ფართობი',
-        sqm: 'კვ/მ'
+        sqm: 'კვ/მ',
+        apartId : 'ბინის ნომერი',
+        name: 'სახელი',
+        phone: 'მობილური',
+        mail: 'მეილი'
     },
   },
   // Add more languages and translations as needed

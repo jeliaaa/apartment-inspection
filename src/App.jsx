@@ -8,6 +8,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 import Apartment from './pages/apartment/Apartment';
 import mainLogo from './assets/logos/mainLogo.png'
 import ApartmentSingle from './pages/apartmentssingle/ApartmentSingle';
+import ApartmentCustom from './pages/apartsCustom/ApartmentCustom';
 function App() {
   const { t, i18n } = useTranslation();
   const [val, setVal] = useState('');
@@ -37,6 +38,7 @@ function App() {
         <Routes>
           <Route index path='/' element={<Main />} />
           <Route path='/:name' element={<Apartment />} />
+          <Route path='/:name/custom' element={<ApartmentCustom />} />
           <Route path='/:name/:id' element={<ApartmentSingle />} />
         </Routes>
       </div>

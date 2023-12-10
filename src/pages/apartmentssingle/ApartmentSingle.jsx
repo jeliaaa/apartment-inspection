@@ -1,4 +1,3 @@
-import { Container, Table, TableCaption, TableContainer, Tbody, Td, Tfoot, Th, Thead, Tr } from '@chakra-ui/react';
 import React, { useEffect } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
 import './apartmentssingle.scss'
@@ -9,7 +8,6 @@ import BackBtn from '../../ReusableComps/backbtn/BackBtn';
 import { useTranslation } from 'react-i18next';
 import "react-image-gallery/styles/css/image-gallery.css"; // Import the CSS for styling (optional)
 import Gallery from 'react-image-gallery';
-import ReactPlayer from 'react-player';
 import { Element } from 'react-scroll';
 import { Link } from 'react-scroll';
 
@@ -114,7 +112,7 @@ const ApartmentSingle = () => {
                     <Link style={{backgroundColor:'yellow', padding:10, width:200, borderRadius:5, textAlign:'center', cursor:'pointer', fontWeight:'bolder'}} smooth to='gallery'>{t('viewPhotos')}</Link>
                         {data.map(e => {
                             if(e.id == id){
-                                return <div style={{backgroundColor:'cornflowerblue', padding:10, width:320, borderRadius:5, textAlign:'center', backgroundBlendMode:'color-burn', color:'white', fontSize:25, fontWeight:'bold'}}>
+                                return <div style={{backgroundColor:'cornflowerblue', padding:10, width:200, borderRadius:5, textAlign:'center', backgroundBlendMode:'color-burn', color:'white', fontSize:25, fontWeight:'bold'}}>
                                     <span>{t('area')} : {e.area} {t('sqm')}</span>
                                 </div>
                             }

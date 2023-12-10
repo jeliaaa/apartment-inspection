@@ -9,6 +9,7 @@ import BackBtn from '../../ReusableComps/backbtn/BackBtn'
 import { useTranslation } from 'react-i18next'
 const Apartment = () => {
     let data = [
+        {id :'custom', address: "customize", sadarbazo: "customize"},
         {id :'1', address: "Chavch1a", sadarbazo: "1"},
         {id :'2', address: "Chavch2a", sadarbazo: "1"},
         {id :'3', address: "Chavch3a", sadarbazo: "1"},
@@ -76,6 +77,7 @@ const Apartment = () => {
                 </Stack>
             </div>
             {filteredData.map((e) => (
+                
                 <Link key={e.id} to={`${e.id}`}>
                     <Card maxW='sm' >
                         <CardBody className='card-white'>
